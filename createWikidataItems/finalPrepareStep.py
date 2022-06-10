@@ -6,7 +6,7 @@ from pywikibot.config import usernames
 pywikibot.config.put_throttle = 0
 
 site = pywikibot.Site("wikidata", "wikidata")
-# usernames['wikidata']['wikidata'] = 'GretaHeng18bot'
+usernames['wikidata']['wikidata'] = 'GretaHeng18bot'
 repo = site.data_repository()
 
 

@@ -3,7 +3,7 @@ Author: Sheetal Prasad
 Created on: 3 June 2022
 Subject: Automate Reconciliation steps on open refine. Once all columns are reconciled, allow user to do manual review.
 """
-import sys
+
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -21,8 +21,6 @@ def openRefineSteps(filename, chromedriverPath):
                               options=chrome_options)
     driver.get("http://127.0.0.1:3333/")
 
-    # line 32, 33 specific to library monitors.
-    driver.set_window_position(-1000, 0)
     driver.maximize_window()
 
     wait = WebDriverWait(driver, 20)
@@ -185,8 +183,8 @@ def callOpenRefine(ready4orFile):
     toBeAddedString = separator.join(toBeAdded) + ' and ' if len(toBeAdded) > 0 else ''
 
     print("\nSUCCESS: OpenRefine project ready for manual review.\n"
-          "1. Check all websites.\n"
-          "2. Check and remove unnecessary LC urls.\n"
-          "3. Check and adjust Faculty name and wikidata links or create new.\n"
-          "4. Add " + toBeAddedString + "FQnum.\n"
-                                        "5. Export to CSV once review is completed.\n")
+        "1. Check all websites.\n"
+        "2. Check and remove unnecessary LC urls.\n"
+        "3. Check and adjust Faculty name and wikidata links or create new.\n"
+        "4. Add " + toBeAddedString + "FQnum.\n"
+        "5. Export to CSV once review is completed.\n")
