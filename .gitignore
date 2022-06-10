@@ -4,3 +4,4 @@ venv/
 pywikibot-conf/
 pywikibot.lwp
 throttle.ctrl
+**/__pycache__/*
