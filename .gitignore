@@ -1,7 +1,8 @@
 .idea/
 apicache-py3/
 venv/
-pywikibot-conf/
+user-config.py
+user-password.py
 pywikibot.lwp
 throttle.ctrl
-**/__pycache__/*
+**/__pycache__/
