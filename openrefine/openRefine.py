@@ -176,7 +176,7 @@ def callOpenRefine(ready4orFile):
     print("\nRunning Open Refine...")
 
     print("Processing...")
-    chromeDriverPath = str(input("Enter path to your chromedriver executable (enter till chromedriver, not .exe):"))
+    chromeDriverPath = str(input("Enter path to your chromedriver executable (enter till chromedriver, not .exe): "))
     toBeAdded = openRefineSteps(ready4orFile, chromeDriverPath)
     time.sleep(4)
     separator = ','
