@@ -5,6 +5,3 @@ venv/
 pywikibot.lwp
 throttle.ctrl
 **/__pycache__/
-#
-#user-config.py
-#user-password.py
