@@ -1,4 +1,7 @@
-from decouple import config
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 # This is an automatically generated file used to store
 # BotPasswords.
 #
@@ -9,4 +12,4 @@ from decouple import config
 #
 # See https://www.mediawiki.org/wiki/Manual:Pywikibot/BotPasswords for more
 # information.
-(config("WIKIDATA_USERNAME"), BotPassword(config("WIKIDATA_PASSWORD_NAME"), config("WIKIDATA_PASSWORD")))
+(os.getenv("WIKIDATA_USERNAME"), BotPassword(os.getenv("WIKIDATA_PASSWORD_NAME"), os.getenv("WIKIDATA_PASSWORD")))
